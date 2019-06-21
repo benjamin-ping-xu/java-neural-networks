@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  *  A basic implementation of a neural network neuron
- *  @author bpx
+ *  @author Benjamin Xu
  */
 public class Neuron {
 
