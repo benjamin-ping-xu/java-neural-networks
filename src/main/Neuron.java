@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *  A basic implementation of a neural network neuron
@@ -19,7 +20,8 @@ public class Neuron {
      * @return a pseudo random real number
      */
     public double initNeuron(){
-        return 0;
+        Random r = new Random();
+        return r.nextDouble();
     }
 
     /**
@@ -27,7 +29,7 @@ public class Neuron {
      *  @param listOfWeightIn the list of real numbers to be stored
      */
     public void setListOfWeightIn(ArrayList<Double> listOfWeightIn){
-
+        this.listOfWeightIn = listOfWeightIn;
     }
 
     /**
@@ -35,7 +37,7 @@ public class Neuron {
      *  @param listOfWeightOut the list of real numbers to be stored
      */
     public void setListOfWeightOut(ArrayList<Double> listOfWeightOut){
-
+        this.listOfWeightOut = listOfWeightOut;
     }
 
     /**
